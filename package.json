@@ -1,0 +1,31 @@
+{
+  "name": "idrawro",
+  "version": "0.0.1",
+  "description": "iDraw 4 Architecture Website",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "css-loader": "^0.19.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "modernizr": "^3.1.0",
+    "script-loader": "^0.6.1",
+    "style-loader": "^0.12.4",
+    "webpack": "^1.12.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idrawro/idrawro.github.io.git"
+  },
+  "keywords": [
+    "architecture"
+  ],
+  "author": "Emilian Ionascu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idrawro/idrawro.github.io/issues"
+  },
+  "homepage": "https://github.com/idrawro/idrawro.github.io#readme"
+}

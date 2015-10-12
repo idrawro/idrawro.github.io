@@ -1,0 +1,11 @@
+﻿body {
+    background: #BBBBBB;
+}
+
+[data-magellan-expedition-clone] {
+    visibility: hidden;
+}
+
+.homeContainer, .profileContainer, .projectsContainer {
+    height: 400px;
+}

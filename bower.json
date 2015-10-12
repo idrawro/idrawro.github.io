@@ -1,0 +1,26 @@
+{
+  "name": "iDraw",
+  "version": "0.0.1",
+  "homepage": "https://github.com/idrawro/idrawro.github.io",
+  "authors": [
+    "emilianionascu <emilian.ionascu@gmail.com>"
+  ],
+  "description": "iDraw 4 Architecture",
+  "main": "",
+  "moduleType": [ ],
+  "keywords": [
+    "architecture"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.3"
+  }
+}
