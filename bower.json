@@ -1,0 +1,26 @@
+{
+  "name": "iDraw Studio de Arhitectura",
+  "homepage": "http://www.idraw.ro",
+  "authors": [
+    "valentin.iliescu@gmail.com"
+  ],
+  "description": "iDraw Site Oficial",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.2.0",
+    "iron-elements": "PolymerElements/iron-elements#~1.0.4",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.6",
+    "prismic.io": "~1.3.4",
+    "molecules": "PolymerElements/molecules#~1.0.0"
+  }
+}

@@ -1,0 +1,66 @@
+:root {
+  --iDraw-blue: #3d526c;
+  --iDraw-background: #eee;
+}
+paper-scroll-header-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--iDraw-background, #eee);
+  --paper-scroll-header-panel-full-header: {
+    background-color: var(--iDraw-blue);
+  }
+  --paper-scroll-header-panel-condensed-header: {
+    background-color: var(--iDraw-blue);
+  }
+}
+paper-toolbar {
+  height: 256px;
+  background-color: transparent;
+  overflow: visible;
+}
+paper-icon-button {
+  margin: 0 8px;
+  --paper-icon-button-ink-color: white;
+}
+.bottom-text {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.subtitle {
+  padding-top: 4px;
+  font-size: 16px;
+  color: #ccc;
+}
+.bookmark {
+  position: absolute;
+  bottom: -24px;
+  right: 24px;
+  fill: #4285f4;
+  height: 48px;
+  width: 48px;
+}
+.content {
+  padding: 16px 10px 16px 50px;
+}
+.indent {
+  margin-left: 60px;
+}
+.spacer {
+  @apply(--layout-flex);
+}
+.logoIronImage {
+  height: 100px;
+  width: 210px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
