@@ -21,6 +21,7 @@
     "iron-elements": "PolymerElements/iron-elements#~1.0.4",
     "paper-elements": "PolymerElements/paper-elements#~1.0.6",
     "prismic.io": "~1.3.4",
-    "molecules": "PolymerElements/molecules#~1.0.0"
+    "molecules": "PolymerElements/molecules#~1.0.0",
+    "foundation-sites": "~6.0.4"
   }
 }

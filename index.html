@@ -5,12 +5,24 @@
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js">
     </script>
     <link rel="import" href="elements/iDraw-container.html">
+    <link rel="import" href="bower_components/paper-input/paper-input.html">
+    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="bower_components/paper-styles/demo.css">
     <link rel="stylesheet" href="assets/style/common.css">
 </head>
 <body unresolved>
     <iDraw-container>
-        <iron-image style="height: 100%; width: 100%;" sizing="cover" src="assets/img/slides/iDraw-slide-1.jpg" alt="iDraw Studio de Arhitectura" />
+        <iron-image style="height: 1200px; width: 100%;" sizing="cover" src="assets/img/slides/iDraw-slide-1.jpg" alt="iDraw Studio de Arhitectura"></iron-image>
+        <div class="row">
+            <div class="large-offset-6 large-6 medium-offset-6 medium-6 small-offset-6 small-6 columns">
+                <form>
+                    <paper-input label="Nume" required auto-validate error-message="Va rugam sa introduceti numele."></paper-input>
+                    <paper-input label="e-mail" required auto-validate error-message="Va rugam sa introduceti adresa de e-mail."></paper-input>
+                </form>
+            </div>
+        </div>
     </iDraw-container>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
 </body>
 </html>
