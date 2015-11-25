@@ -38,7 +38,7 @@
             is: 'iDraw-blog-entries',
             attached: function () {
                 var element = this;
-                Prismic.Api('https://idraw.prismic.io/api', function (err, api) {
+                Prismic.Api('https://idrawblog.prismic.io/api', function (err, api) {
                     api.form('everything')
                         .ref(api.master())
                         .query(Prismic.Predicates.at("document.type", "blog"))
@@ -48,7 +48,7 @@
                                 return { "title": result.getHtml("blog.shortlede"), "body": result.getHtml("blog.body") }
                             });
                         });
-                }, "MC5WaHZHQ1J3QUFCd0FFN1Zn.JX0yN0bvv73vv71r77-977-977-977-9dgYdFwsPDgfvv73vv73vv71sce-_ve-_ve-_vRoBFQI");
+                }, "MC5WbFdFUUNFQUFCQUtMSDZh.Wn3vv73vv73vv73vv73vv70X77-977-977-9By4pB--_vT_vv71N77-977-9LO-_ve-_ve-_vWfvv70v77-9b--_vSo");
             }
         });
     </script>
