@@ -70,10 +70,6 @@
       width: 48px;
     }
 
-    .content {
-      height: 100%;
-    }
-
     .indent {
       margin-left: 60px;
     }
@@ -101,7 +97,7 @@
 
   </style>
   <template>
-    <paper-scroll-header-panel condenses keep-condensed-header>
+      <paper-scroll-header-panel condenses keep-condensed-header>
       <paper-toolbar>
           <div>
               <iron-image class="logoIronImage" sizing="contain" src="../assets/img/logo.png" alt="iDraw Studio de Arhitectura"/>
@@ -133,9 +129,11 @@
               </a>
           </div>
       </paper-toolbar>
-      <div class="content">
-        <content></content>
-      </div>
+        <div class="content">
+            <div class="innerContent">
+                <content></content>
+            </div>
+        </div>
     </paper-scroll-header-panel>
   </template>
   <script>

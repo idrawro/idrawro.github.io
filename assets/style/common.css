@@ -1,0 +1,11 @@
+.contactForm {
+    margin-bottom: 20px;
+}
+
+.iDrawBackground {
+    background-color: #405A74;
+}
+
+textarea[rows] {
+    height: 100%;
+}

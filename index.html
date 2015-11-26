@@ -6,23 +6,75 @@
     </script>
     <link rel="import" href="elements/iDraw-container.html">
     <link rel="import" href="bower_components/paper-input/paper-input.html">
-    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
+    <link rel="import" href="bower_components/paper-radio-button/paper-radio-button.html">
+    <link rel="import" href="bower_components/iron-icon/iron-icon.html">
+    <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="bower_components/iron-icons/social-icons.html">
+    <link rel="import" href="bower_components/iron-icons/image-icons.html">
+    <link rel="import" href="bower_components/paper-input/paper-textarea.html">
+    <link rel="stylesheet" href="bower_components/foundation-sites/dist/foundation.min.css">
     <link rel="stylesheet" href="bower_components/paper-styles/demo.css">
     <link rel="stylesheet" href="assets/style/common.css">
+
+    <style is="custom-style">
+        paper-input, paper-textarea {
+            --paper-input-container-color: white;
+            --paper-input-container-focus-color: blue;
+            --paper-input-container-invalid-color: red;
+            --paper-input-container-input-color: white;
+        }
+
+        paper-button {
+            color: gray;
+            background-color: white;
+            --paper-button-ink-color: black;
+        }
+
+        paper-radio-button {
+            --paper-radio-button-label-color: white;
+            --paper-radio-button-unchecked-color: white;
+            --paper-radio-button-checked-color: white;
+        }
+    </style>
 </head>
 <body unresolved>
     <iDraw-container>
-        <iron-image style="height: 1200px; width: 100%;" sizing="cover" src="assets/img/slides/iDraw-slide-1.jpg" alt="iDraw Studio de Arhitectura"></iron-image>
-        <div class="row">
-            <div class="large-offset-6 large-6 medium-offset-6 medium-6 small-offset-6 small-6 columns">
-                <form>
-                    <paper-input label="Nume" required auto-validate error-message="Va rugam sa introduceti numele."></paper-input>
-                    <paper-input label="e-mail" required auto-validate error-message="Va rugam sa introduceti adresa de e-mail."></paper-input>
-                </form>
+        <div class="iDrawBackground">
+            <iron-image style="height: 1200px; width: 100%; margin-bottom: -6px;" sizing="cover" src="assets/img/slides/iDraw-slide-1.jpg" alt="iDraw Studio de Arhitectura">
+            </iron-image>
+            <div style="color: white; background-color: peru; padding-top: 20px;">
+                <div class="row">
+                    <form>
+                        <div class="row">
+                            <h3 class="large-12 medium-12 small-12 columns">
+                                Contactati-ne pentru:
+                            </h3>
+                            <div class="large-4 medium-4 small-6 contactForm columns">
+                                <paper-radio-group selected="small">
+                                    <paper-radio-button name="info">Informatii suplimentare</paper-radio-button>
+                                    <paper-radio-button name="meeting">A stabili o intalnire cu consultantii nostri</paper-radio-button>
+                                    <paper-radio-button name="large">A ne scrie pareri sau a ne transmite idei de proiect</paper-radio-button>
+                                </paper-radio-group>
+                            </div>
+                            <div class="large-8 medium-8 small-6 contactForm columns">
+                                <paper-input id="fullName" style="color: white" label="Nume" required auto-validate error-message="Va rugam sa introduceti numele."></paper-input>
+                                <paper-input id="phoneNumber" style="color: white" label="Telefon" required auto-validate error-message="Va rugam sa introduceti numarul de telefon."></paper-input>
+                                <paper-input id="email" style="color: white" label="e-mail" required auto-validate error-message="Va rugam sa introduceti adresa de e-mail."></paper-input>
+                                <paper-textarea id="messageBody" label="Mesaj"></paper-textarea>
+                                <paper-button elevation="1" class="float-right">
+                                    <iron-icon icon="send"></iron-icon>
+                                    Trimite Mesajul
+                                </paper-button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </iDraw-container>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
 </body>
 </html>
