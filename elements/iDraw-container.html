@@ -98,37 +98,43 @@
   </style>
   <template>
       <paper-scroll-header-panel condenses keep-condensed-header>
-      <paper-toolbar>
-          <div>
-              <iron-image class="logoIronImage" sizing="contain" src="../assets/img/logo.png" alt="iDraw Studio de Arhitectura"/>
-          </div>
-          <div class="spacer"></div>
-          <div class="menuContainer">
-              <a class="menuLink" href="/">
-                  <iron-icon icon="home"></iron-icon>
-              </a>
-              <a class="menuLink">
-                  <iron-icon icon="text-format"></iron-icon>
-                  <span>Servicii</span>
-              </a>
-              <a href="../pages/blog.html" class="menuLink">
-                  <iron-icon icon="image:edit"></iron-icon>
-                  <span>Blog</span>
-              </a>
-              <a class="menuLink">
-                  <iron-icon icon="perm-media"></iron-icon>
-                  <span>Portofoliu</span>
-              </a>
-              <a class="menuLink">
-                  <iron-icon icon="social:group"></iron-icon>
-                  <span>Despre Noi</span>
-              </a>
-              <a class="menuLink">
-                  <iron-icon icon="mail"></iron-icon>
-                  <span>Contact</span>
-              </a>
-          </div>
-      </paper-toolbar>
+          <paper-toolbar>
+                  <div>
+                      <iron-image class="logoIronImage" sizing="contain" src="../assets/img/logo.png" alt="iDraw Studio de Arhitectura" />
+                  </div>
+                  <div class="spacer"></div>
+              <div class="menuContainer">
+                  <div>
+                      <a class="menuLink" href="/">
+                          <iron-icon icon="home"></iron-icon>
+                      </a>
+                      <a class="menuLink">
+                          <iron-icon icon="text-format"></iron-icon>
+                          <span>Servicii</span>
+                      </a>
+                      <a href="../pages/blog.html" class="menuLink">
+                          <iron-icon icon="image:edit"></iron-icon>
+                          <span>Blog</span>
+                      </a>
+                      <a class="menuLink">
+                          <iron-icon icon="perm-media"></iron-icon>
+                          <span>Portofoliu</span>
+                      </a>
+                      <a class="menuLink">
+                          <iron-icon icon="social:group"></iron-icon>
+                          <span>Despre Noi</span>
+                      </a>
+                      <a class="menuLink">
+                          <iron-icon icon="mail"></iron-icon>
+                          <span>Contact</span>
+                      </a>
+                      <br/>
+                  </div>
+              </div>
+              <paper-material elevation="5" style="background-color: darkgray;">
+                  <iron-image style="background-color: peru; width: 550px; height: 100px;" sizing="contain" src="../assets/img/semnaturaPosdru.png" alt="iDraw Studio de Arhitectura" />
+              </paper-material>
+          </paper-toolbar>
         <div class="content">
             <div class="innerContent">
                 <content></content>
