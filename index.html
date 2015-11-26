@@ -7,6 +7,7 @@
     <link rel="import" href="elements/iDraw-container.html">
     <link rel="import" href="bower_components/paper-input/paper-input.html">
     <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
     <link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
     <link rel="import" href="bower_components/paper-radio-button/paper-radio-button.html">
     <link rel="import" href="bower_components/iron-icon/iron-icon.html">
@@ -16,6 +17,7 @@
     <link rel="import" href="bower_components/iron-icons/social-icons.html">
     <link rel="import" href="bower_components/iron-icons/image-icons.html">
     <link rel="import" href="bower_components/paper-input/paper-textarea.html">
+    <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
     <link rel="stylesheet" href="bower_components/foundation-sites/dist/foundation.min.css">
     <link rel="stylesheet" href="bower_components/paper-styles/demo.css">
     <link rel="stylesheet" href="assets/style/common.css">
@@ -83,7 +85,6 @@
                                 <paper-input id="email" style="color: white" label="e-mail" required auto-validate error-message="Va rugam sa introduceti adresa de e-mail."></paper-input>
                                 <paper-textarea id="messageBody" label="Mesaj"></paper-textarea>
                                 <paper-button elevation="1" class="float-right">
-                                    <iron-icon icon="send"></iron-icon>
                                     Trimite Mesajul
                                 </paper-button>
                             </div>
@@ -92,6 +93,23 @@
                 </div>
             </div>
         </div>
+        <paper-toolbar style="background-color: inherit;" class="socialToolbar" justify="center">
+            <paper-material elevation="1">
+                <a href="https://www.facebook.com/">
+                    <img src="assets/img/facebookLogo.png"/>
+                </a>
+            </paper-material>
+            <paper-material elevation="1">
+                <a href="https://www.pinterest.com/">
+                    <img src="assets/img/pinterestLogo.png"/>
+                </a>
+            </paper-material>
+            <paper-material elevation="1">
+                <a href="https://www.twitter.com/">
+                    <img src="assets/img/twitterLogo.png" />
+                </a>
+            </paper-material>
+        </paper-toolbar>
     </iDraw-container>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
