@@ -48,25 +48,25 @@
     <iDraw-container>
         <div class="iDrawBackground">
             <iron-image style="height: 700px; width: 100%; margin-bottom: -6px;" sizing="cover" src="assets/img/slides/iDraw-slide-1.jpg" alt="iDraw Studio de Arhitectura">
-                    <div class="row" style="max-width: 100%; background: rgba(0, 0, 0, 0.7);">
-                        <div style="height: 100px;" class="large-6 medium-6 small-6 columns">
-                            <p style="height: 100px; display: table-cell; vertical-align: middle; color: white; text-align: justify;" class="insetShadow">
-                                Acest site este cofinanţat din Fondul Social European prin Programul Operaţional Sectorial Dezvoltarea Resurselor Umane 2007-2013.
-                                Pentru informaţii detaliate despre celelalte programe cofinanţate de Uniunea Europeană, vă invităm să vizitaţi <a href="http://www.fonduri-ue.ro">www.fonduri-ue.ro</a>.
-                                Conţinutul acestui material nu reprezintă în mod obligatoriu poziţia oficială a Uniunii Europene sau a Guvernului României.
-                            </p>
-                        </div>
-                        <div class="large-6 medium-5 small-5 columns align-right" style="-moz-min-width: 550px; -ms-min-width: 550px; -o-min-width: 550px; -webkit-min-width: 550px; min-width: 550px;">
-                            <iron-image style="width: 550px; height: 100px;" sizing="contain" src="../assets/img/semnaturaPosdru.png" alt="iDraw Studio de Arhitectura"></iron-image>
-                        </div>
+                <div class="row" style="max-width: 100%; background: rgba(0, 0, 0, 0.7);">
+                    <div style="height: 100px;" class="large-6 medium-6 small-6 columns">
+                        <p style="height: 100px; display: table-cell; vertical-align: middle; color: white; text-align: justify;" class="insetShadow">
+                            Acest site este cofinanţat din Fondul Social European prin Programul Operaţional Sectorial Dezvoltarea Resurselor Umane 2007-2013.
+                            Pentru informaţii detaliate despre celelalte programe cofinanţate de Uniunea Europeană, vă invităm să vizitaţi <a href="http://www.fonduri-ue.ro">www.fonduri-ue.ro</a>.
+                            Conţinutul acestui material nu reprezintă în mod obligatoriu poziţia oficială a Uniunii Europene sau a Guvernului României.
+                        </p>
                     </div>
+                    <div class="large-6 medium-5 small-5 columns align-right" style="-moz-min-width: 550px; -ms-min-width: 550px; -o-min-width: 550px; -webkit-min-width: 550px; min-width: 550px;">
+                        <iron-image style="width: 550px; height: 100px;" sizing="contain" src="../assets/img/semnaturaPosdruLight.png" alt="iDraw Studio de Arhitectura"></iron-image>
+                    </div>
+                </div>
                 <div style="text-align: center; height: 700px; padding-top: 200px;">
                     <span style="font-size: 50px;" class="elegantShadowText insetShadow">STUDIO DE ARHITECTURA</span>
                 </div>
             </iron-image>
             <div style="color: white; background-color: peru; padding-top: 20px;">
                 <div class="row">
-                    <form>
+                    <form is="iron-form" id="contactForm">
                         <div class="row">
                             <h3 class="large-12 medium-12 small-12 columns">
                                 Contactati-ne pentru:
@@ -79,11 +79,11 @@
                                 </paper-radio-group>
                             </div>
                             <div class="large-8 medium-8 small-6 contactForm columns">
-                                <paper-input name="fullName" style="color: white" label="Nume" required auto-validate error-message="Va rugam sa introduceti numele."></paper-input>
-                                <paper-input name="phoneNumber" style="color: white" label="Telefon" required auto-validate error-message="Va rugam sa introduceti numarul de telefon."></paper-input>
-                                <paper-input name="email" style="color: white" label="e-mail" required auto-validate error-message="Va rugam sa introduceti adresa de e-mail."></paper-input>
-                                <paper-textarea name="messageBody" label="Mesaj"></paper-textarea>
-                                <paper-button elevation="1" class="float-right">
+                                <paper-input id="fullName" name="fullName" style="color: white" label="Nume" required error-message="Va rugam sa introduceti numele."></paper-input>
+                                <paper-input id="phoneNumber" name="phoneNumber" style="color: white" label="Telefon" required error-message="Va rugam sa introduceti numarul de telefon."></paper-input>
+                                <paper-input id="email" name="email" style="color: white" label="e-mail" required error-message="Va rugam sa introduceti adresa de e-mail."></paper-input>
+                                <paper-textarea id="messageBody" name="messageBody" label="Mesaj" required error-message="Va rugam sa introduceti un mesaj."></paper-textarea>
+                                <paper-button elevation="1" class="float-right" id="buttonSendContactMessage">
                                     Trimite Mesajul
                                 </paper-button>
                             </div>
@@ -95,12 +95,12 @@
         <paper-toolbar style="background-color: #CCCC87;" class="socialToolbar" justify="center">
             <paper-material elevation="1">
                 <a href="https://www.facebook.com/studioidraw">
-                    <img src="assets/img/facebookLogo.png" alt="iDraw Studio Facebook" />
+                    <img src="assets/img/facebookLogo.png" alt="iDraw Studio Facebook"/>
                 </a>
             </paper-material>
             <paper-material elevation="1">
                 <a href="https://www.pinterest.com/studioidraw/">
-                    <img src="assets/img/pinterestLogo.png" style="height: 50px; width: 50px;" alt="iDraw Studio pInterest" />
+                    <img src="assets/img/pinterestLogo.png" style="height: 50px; width: 50px;" alt="iDraw Studio pInterest"/>
                 </a>
             </paper-material>
             <paper-material elevation="1">
@@ -110,7 +110,7 @@
             </paper-material>
             <paper-material elevation="1">
                 <a href="https://plus.google.com/110713896776805230556">
-                    <img src="assets/img/googlePlusLogo.png" alt="iDraw Studio Google Plus" />
+                    <img src="assets/img/googlePlusLogo.png" alt="iDraw Studio Google Plus"/>
                 </a>
             </paper-material>
         </paper-toolbar>
