@@ -13,6 +13,10 @@
     <link rel="import" href="bower_components/iron-icon/iron-icon.html">
     <link rel="import" href="bower_components/paper-material/paper-material.html">
     <link rel="import" href="bower_components/iron-image/iron-image.html">
+    <link rel="import" href="bower_components/paper-card/paper-card.html">
+    <link rel="import" href="bower_components/iron-icon/iron-icon.html">
+    <link rel="import" href="bower_components/iron-icons/hardware-icons.html">
+    <link rel="import" href="bower_components/iron-icons/maps-icons.html">
     <link rel="import" href="bower_components/iron-icons/iron-icons.html">
     <link rel="import" href="bower_components/iron-icons/social-icons.html">
     <link rel="import" href="bower_components/iron-icons/image-icons.html">
@@ -22,14 +26,17 @@
     <link rel="stylesheet" href="bower_components/paper-styles/demo.css">
     <link rel="stylesheet" href="assets/style/common.css">
     <title>iDraw Studio de Arhitectura</title>
-
     <style is="custom-style">
-        paper-input, paper-textarea {
-            --paper-input-container-color: white;
-            --paper-input-container-focus-color: blue;
-            --paper-input-container-invalid-color: red;
-            --paper-input-container-input-color: white;
+         .big {
+            --iron-icon-height: 80px;
+            --iron-icon-width: 80px;
         }
+         paper-input, paper-textarea {
+             --paper-input-container-color: white;
+             --paper-input-container-focus-color: blue;
+             --paper-input-container-invalid-color: red;
+             --paper-input-container-input-color: white;
+         }
 
         paper-button {
             color: gray;
@@ -56,7 +63,7 @@
                             Conţinutul acestui material nu reprezintă în mod obligatoriu poziţia oficială a Uniunii Europene sau a Guvernului României.
                         </p>
                     </div>
-                    <div class="large-6 medium-5 small-5 columns align-right" style="-moz-min-width: 550px; -ms-min-width: 550px; -o-min-width: 550px; -webkit-min-width: 550px; min-width: 550px;">
+                    <div class="large-6 medium-5 small-5 columns align-right" style="-moz-min-width: 550px; -ms-min-width: 550px; -o-min-width: 550px; -webkit-min-width: 550px; min-width: 550px; text-align: right;">
                         <iron-image style="width: 550px; height: 100px;" sizing="contain" src="../assets/img/semnaturaPosdruLight.png" alt="iDraw Studio de Arhitectura"></iron-image>
                     </div>
                 </div>
@@ -65,6 +72,107 @@
                 </div>
             </iron-image>
             <div style="color: white; background-color: peru; padding-top: 20px;">
+                <div style="margin: 40px;">
+                    <div class="row" style="color: #2199e8; max-width: 100%; margin-top: 40px; margin-bottom: 20px;">
+                        <div class="large-12 medium-12 small-12 columns">
+                            <h1 style="color: #2199e8">SERVICII PRINCIPALE</h1>
+                        </div>
+                    </div>
+                    <div class="row" style="color: #2199e8; max-width: 100%; margin-top: 40px; margin-bottom: 20px;">
+                        <div class="large-4 medium-4 small-4 columns">
+                            <paper-card style="width: 100%;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <iron-icon icon="account-balance" class="big"></iron-icon>
+                                        </td>
+                                        <td>
+                                            <h2 style="margin-bottom: 0;">Constructii Noi</h2>
+                                            <h4 style="color: gray;">constructii de la zero</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </paper-card>
+                        </div>
+                        <div class="large-4 medium-4 small-4 columns">
+                            <paper-card style="width: 100%;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <iron-icon icon="event-seat" class="big"></iron-icon>
+                                        </td>
+                                        <td>
+                                            <h2 style="margin-bottom: 0;">Arhitectura de Interior</h2>
+                                            <h4 style="color: gray;">planificarea si designul interiorului</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </paper-card>
+                        </div>
+                        <div class="large-4 medium-4 small-4 columns">
+                            <paper-card style="width: 100%;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <iron-icon icon="extension" class="big"></iron-icon>
+                                        </td>
+                                        <td>
+                                            <h2 style="margin-bottom: 0;">Design & Renovare</h2>
+                                            <h4 style="color: gray;">improspatati constructiile vechi</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </paper-card>
+                        </div>
+                    </div>
+                    <div class="row" style="color: #2199e8; max-width: 100%; margin-top: 40px; margin-bottom: 20px;">
+                        <div class="large-4 medium-4 small-4 columns">
+                            <paper-card style="width: 100%;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <iron-icon icon="hardware:laptop-windows" class="big"></iron-icon>
+                                        </td>
+                                        <td>
+                                            <h2 style="margin-bottom: 0;">Design Prototip</h2>
+                                            <h4 style="color: gray;">invatare si experimentare cu tipare arhitecturale</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </paper-card>
+                        </div>
+                        <div class="large-4 medium-4 small-4 columns">
+                            <paper-card style="width: 100%;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <iron-icon icon="maps:layers" class="big"></iron-icon>
+                                        </td>
+                                        <td>
+                                            <h2 style="margin-bottom: 0;">Design Sustenabil</h2>
+                                            <h4 style="color: gray;">minimizati efectele negative ale cladirilor</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </paper-card>
+                        </div>
+                        <div class="large-4 medium-4 small-4 columns">
+                            <paper-card style="width: 100%;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <iron-icon icon="card-travel" class="big"></iron-icon>
+                                        </td>
+                                        <td>
+                                            <h2 style="margin-bottom: 0;">Planificare Proiect</h2>
+                                            <h4 style="color: gray;">modelati viziunea perfecta pentru fiecare sit</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </paper-card>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <form is="iron-form" id="contactForm">
                         <div class="row">
