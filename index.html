@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="bower_components/foundation-sites/dist/foundation.min.css">
     <link rel="stylesheet" href="bower_components/paper-styles/demo.css">
     <link rel="stylesheet" href="assets/style/common.css">
+    <title>iDraw Studio de Arhitectura</title>
 
     <style is="custom-style">
         paper-input, paper-textarea {
@@ -47,12 +48,11 @@
     <iDraw-container>
         <div class="iDrawBackground">
             <iron-image style="height: 700px; width: 100%; margin-bottom: -6px;" sizing="cover" src="assets/img/slides/iDraw-slide-1.jpg" alt="iDraw Studio de Arhitectura">
-                <paper-material elevation="5">
-                    <div class="row" style="max-width: 100%; background: rgba(0, 0, 0, 0.5);">
+                    <div class="row" style="max-width: 100%; background: rgba(0, 0, 0, 0.7);">
                         <div style="height: 100px;" class="large-6 medium-6 small-6 columns">
                             <p style="height: 100px; display: table-cell; vertical-align: middle; color: white; text-align: justify;" class="insetShadow">
                                 Acest site este cofinanţat din Fondul Social European prin Programul Operaţional Sectorial Dezvoltarea Resurselor Umane 2007-2013.
-                                Pentru informaţii detaliate despre celelalte programe cofinanţate de Uniunea Europeană, vă invităm să vizitaţi <a href="http://www.fonduri-ue.ro">www.fonduri-ue.ro</a>
+                                Pentru informaţii detaliate despre celelalte programe cofinanţate de Uniunea Europeană, vă invităm să vizitaţi <a href="http://www.fonduri-ue.ro">www.fonduri-ue.ro</a>.
                                 Conţinutul acestui material nu reprezintă în mod obligatoriu poziţia oficială a Uniunii Europene sau a Guvernului României.
                             </p>
                         </div>
@@ -60,7 +60,6 @@
                             <iron-image style="width: 550px; height: 100px;" sizing="contain" src="../assets/img/semnaturaPosdru.png" alt="iDraw Studio de Arhitectura"></iron-image>
                         </div>
                     </div>
-                </paper-material>
                 <div style="text-align: center; height: 700px; padding-top: 200px;">
                     <span style="font-size: 50px;" class="elegantShadowText insetShadow">STUDIO DE ARHITECTURA</span>
                 </div>
@@ -73,17 +72,17 @@
                                 Contactati-ne pentru:
                             </h3>
                             <div class="large-4 medium-4 small-6 contactForm columns">
-                                <paper-radio-group selected="small">
+                                <paper-radio-group selected="small" name="messageReason">
                                     <paper-radio-button name="info">Informatii suplimentare</paper-radio-button>
                                     <paper-radio-button name="meeting">A stabili o intalnire cu consultantii nostri</paper-radio-button>
                                     <paper-radio-button name="large">A ne scrie pareri sau a ne transmite idei de proiect</paper-radio-button>
                                 </paper-radio-group>
                             </div>
                             <div class="large-8 medium-8 small-6 contactForm columns">
-                                <paper-input id="fullName" style="color: white" label="Nume" required auto-validate error-message="Va rugam sa introduceti numele."></paper-input>
-                                <paper-input id="phoneNumber" style="color: white" label="Telefon" required auto-validate error-message="Va rugam sa introduceti numarul de telefon."></paper-input>
-                                <paper-input id="email" style="color: white" label="e-mail" required auto-validate error-message="Va rugam sa introduceti adresa de e-mail."></paper-input>
-                                <paper-textarea id="messageBody" label="Mesaj"></paper-textarea>
+                                <paper-input name="fullName" style="color: white" label="Nume" required auto-validate error-message="Va rugam sa introduceti numele."></paper-input>
+                                <paper-input name="phoneNumber" style="color: white" label="Telefon" required auto-validate error-message="Va rugam sa introduceti numarul de telefon."></paper-input>
+                                <paper-input name="email" style="color: white" label="e-mail" required auto-validate error-message="Va rugam sa introduceti adresa de e-mail."></paper-input>
+                                <paper-textarea name="messageBody" label="Mesaj"></paper-textarea>
                                 <paper-button elevation="1" class="float-right">
                                     Trimite Mesajul
                                 </paper-button>
