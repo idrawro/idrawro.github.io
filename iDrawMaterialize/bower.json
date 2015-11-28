@@ -1,0 +1,22 @@
+{
+  "name": "iDraw Studio de Arhitectura",
+  "homepage": "www.idraw.ro",
+  "authors": [
+    "emilianionascu <emilian.ionascu@gmail.com>"
+  ],
+  "description": "iDraw Official Website",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#~0.97.3"
+  }
+}

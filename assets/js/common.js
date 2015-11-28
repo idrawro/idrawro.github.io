@@ -1,5 +1,5 @@
 ﻿jQuery(document).ready(function () {
-    var scrollBar = jQuery('paper-scroll-header-panel')[0];
+    var scrollBar = jQuery('#paperScrollHeaderPanel');
     var logo = jQuery('.logoIronImage');
 
     scrollBar.addEventListener('content-scroll', function () {

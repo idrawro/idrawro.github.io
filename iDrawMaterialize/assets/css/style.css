@@ -1,0 +1,94 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+    line-height: 1.5;
+    font-size: 0.9em;
+    font-family: Arial;
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+    .icon-block .material-icons {
+        font-size: inherit;
+    }
+
+.nav-wrapper, nav {
+    background: #136a8a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #267871, #405A74 ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #267871, #405A74 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.brand-logo img {
+    height: 150px;
+}
+
+.sideBarIcon {
+    line-height: 64px;
+}
+
+.slideContainer {
+    position: relative;
+}
+
+.mandatoryFields {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mainText {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width : 740px) {
+    .mainText {
+        display: none;
+    }
+}
+
+.mandatoryImageContainer img {
+    max-height: 65px;
+    margin: 10px;
+}
+
+@media only screen and (max-width : 740px) {
+    .slideImage {
+        visibility: hidden;
+    }
+}
+
+.mandatoryImageContainer p {
+    margin-top: -5px;
+}
+
+.justifiedText {
+    text-align: justify;
+}
+
+@media only screen and (min-width : 993px) {
+    nav.tall {
+        height: 156px;
+    }
+
+    nav {
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+}
