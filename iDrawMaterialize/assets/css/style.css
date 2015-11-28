@@ -47,6 +47,12 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+@media only screen and (max-width: 380px) {
+    .slideContainer {
+        height: 363px;
+    }
+}
+
 .mainText {
     position: absolute;
     top: 300px;
@@ -62,7 +68,7 @@ body {
 
 .mandatoryImageContainer img {
     max-height: 65px;
-    margin: 10px;
+    margin-top: 15px;
 }
 
 @media only screen and (max-width : 740px) {
@@ -95,7 +101,12 @@ body {
 
 .slideText {
     text-rendering: optimizeLegibility;
-    color: #202020;
+    color: #FFFFFF;
     letter-spacing: .1em;
-    text-shadow: -1px -1px 1px #111111, 2px 2px 1px #363636;
+    text-shadow: #000 -1px -1px 0;
+}
+
+#index-banner .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
